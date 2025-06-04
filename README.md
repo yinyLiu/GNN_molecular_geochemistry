@@ -42,3 +42,24 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
   *Molecule 1*: Correctly classified as `Labile` in Sample A and `Product` in Sample B after local feature integration.
 
 ## 🛠 Repository Structure
+├── Data_Preparation/ # Raw data & network construction
+├── GNN_Representation/ # Global-local embedding codes
+├── Model_Validation/ # Classifiers & performance tests
+├── Results/ # Metrics and visualizations
+└── References/ # Related papers
+
+
+
+## 🌟 Key Innovation
+- **Dual-Network Design**:  
+  Global network = "Encyclopedia" (general rules); Local network = "Diary" (sample-specific details).
+- **Interpretability**: Feature specialization (e.g., height analogy) makes model decisions transparent.
+
+## 🔮 Future Work
+- Extend to other chemical analysis tasks (e.g., catalysis).
+- Optimize local network granularity (e.g., per-condition vs. per-sample).
+
+---
+
+**How to Use This Repository**:  
+See `Data_Preparation/README.md` for data processing and `GNN_Representation/train.py` for model training.
