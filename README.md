@@ -14,14 +14,14 @@ Traditional single-network approaches fail to capture these contextual differenc
 We propose a **global-local graph neural network (GNN)** framework to resolve label conflicts by combining unsupervised global patterns and sample-specific local features.
 
 ### Step 1: Data Preparation & Network Construction
-- **Irradiation Experiments**: 4 groups (8 samples: A1, A2, ..., D2) with FT-ICR MS analysis.
+- **Irradiation Experiments**: 4 groups (8 samples: A1, A2, B1, B2, C1, C2,D1, D2) with FT-ICR MS analysis.
 - **Global Network**: 
-  - Unsupervised learning on all samples.
+  - Unsupervised representation on all samples.
   - Links represent molecular reactions (e.g., `+CH₂`, `+O₂`).
   - Captures universal patterns (e.g., common reaction pathways).
 - **Local Networks**: 
-  - One sub-network per sample (A1-D2).
-  - Encodes sample-specific features (e.g., pH, light intensity).
+  - One sub-network per sample (A1, A2, B1, B2, C1, C2, D1, D2).
+  - Incorperating sample-specific features.
 
 ### Step 2: GNN Representation
 - **Global Embedding** (Skip-Gram):  
