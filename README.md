@@ -48,17 +48,6 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
 ├── Results/ # Metrics and visualizations
 └── References/ # Related papers
 
-
-
-## 🌟 Key Innovation
-- **Dual-Network Design**:  
-  Global network = "Encyclopedia" (general rules); Local network = "Diary" (sample-specific details).
-- **Interpretability**: Feature specialization (e.g., height analogy) makes model decisions transparent.
-
-## 🔮 Future Work
-- Extend to other chemical analysis tasks (e.g., catalysis).
-- Optimize local network granularity (e.g., per-condition vs. per-sample).
-
 ---
 
 **How to Use This Repository**:  
