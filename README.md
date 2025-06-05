@@ -42,9 +42,9 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
   *Molecule 1*: Correctly classified as `Labile` in Sample A and `Product` in Sample B after local feature integration.
 
 ## Repository Structure
-├── GNN/network_build/ # Raw data & network construction
-├── GNN/embedding/ # Global embedding codes
-├── GNN/features/ # Local embedding codes
-├── GNN/classification_model/ # Classify the extracted structured node feature vectors
-└── GNN/result_images/ # Metrics and visualizations
+├── network_build/ # Raw data & network construction
+├── embedding/ # Global embedding codes
+├── features/ # Local embedding codes
+├── classification_model/ # Classify the extracted structured node feature vectors
+└── result_images/ # Metrics and visualizations
 
