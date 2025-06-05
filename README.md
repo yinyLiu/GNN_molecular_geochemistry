@@ -14,7 +14,7 @@ Traditional single-network approaches fail to capture these contextual differenc
 We propose a **global-local graph neural network (GNN)** framework to resolve label conflicts by combining unsupervised global patterns and sample-specific local features.
 
 ### Step 1: Data Preparation & Network Construction
-- **Irradiation Experiments**: 4 groups (8 samples: A1, A2, B1, B2, C1, C2,D1, D2) with FT-ICR MS analysis.
+- **Irradiation Experiments**: 4 groups (8 samples: A1, A2, B1, B2, C1, C2, D1, D2) with FT-ICR MS analysis.
 - **Global Network**: 
   - Unsupervised representation on all samples.
   - Links represent molecular reactions (e.g., `+CH₂`, `+O₂`).
@@ -37,22 +37,14 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
   Local networks resolve conflicts (e.g., distinguishing "Molecule X" in Sample A vs. B).
 
 ## Results
-- **Accuracy Boost**: Local features improved classification F1-score by **X%** (see `Results/Performance_Metrics`).
+- **Accuracy Boost**: Local features improved classification F1-score by **10%** (see `result_images`).
 - **Case Study**:  
   *Molecule 1*: Correctly classified as `Labile` in Sample A and `Product` in Sample B after local feature integration.
 
 ## Repository Structure
-├── Data_Preparation/ # Raw data & network construction
-├── GNN_Representation/ # Global-local embedding codes
-├── Model_Validation/ # Classifiers & performance tests
-├── Results/ # Metrics and visualizations
-└── References/ # Related papers
+├── network_build/ # Raw data & network construction
+├── embedding/ # Global embedding codes
+├── features/ # Local embedding codes
+├── classification_model/ # Classify the extracted structured node feature vectors
+└── result_images/ # Metrics and visualizations
 
-
-<pre lang="markdown"><code>## 📁 Repository Structure ``` ├── Data_Preparation/ # Raw data & network construction ├── GNN_Representation/ # Global-local embedding codes ├── Model_Validation/ # Classifiers & performance tests ├── Results/ # Metrics and visualizations └── References/ # Related papers ``` </code></pre>
-
-
----
-
-**How to Use This Repository**:  
-See `Data_Preparation/README.md` for data processing and `GNN_Representation/train.py` for model training.
