@@ -32,7 +32,7 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
   `Average Pooling + Concatenate` merges global and local embeddings.
 
 ### Step 3: Model Validation
-- **Classifiers**: Compared DT, DLNN, and XGB on fused embeddings.
+- **Classifiers**: Compared DNN, Decision Tree and XGBoost on fused embeddings.
 - **Key Improvement**:  
   Local networks resolve conflicts (e.g., distinguishing "Molecule X" in Sample A vs. B).
 
