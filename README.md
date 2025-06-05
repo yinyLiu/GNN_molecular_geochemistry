@@ -37,9 +37,7 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
   Local networks resolve conflicts (e.g., distinguishing "Molecule X" in Sample A vs. B).
 
 ## Results
-- **Accuracy Boost**: Local features improved classification F1-score by **10%** (see `result_images`).
-- **Case Study**:  
-  *Molecule 1*: Correctly classified as `Labile` in Sample A and `Product` in Sample B after local feature integration.
+- **Accuracy Boost**: Local features improved classification F1-score at **0.8** (see `result_images`).
 
 ## Repository Structure
 ├── network_build/ # Raw data & network construction
