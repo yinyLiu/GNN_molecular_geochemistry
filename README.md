@@ -40,9 +40,9 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
 - **Accuracy Boost**: Local features improved classification F1-score at **0.8** (see `result_images`).
 
 ## Repository Structure
-├── network_build/ # Raw data & network construction
-├── embedding/ # Global embedding codes
-├── features/ # Local embedding codes
-├── classification_model/ # Classify the extracted structured node feature vectors
-└── result_images/ # Metrics and visualizations
+- **network_build**: # Raw data & network construction
+- **embedding**: # Global embedding codes
+- **features**: # Local embedding codes
+- **classification_model**: # Classify the extracted structured node feature vectors
+- **result_images**: # Metrics and visualizations
 
