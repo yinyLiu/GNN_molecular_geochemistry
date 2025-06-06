@@ -41,8 +41,8 @@ We propose a **global-local graph neural network (GNN)** framework to resolve la
 
 ## Repository Structure
 - **network_build**: # Raw data & network construction
-- **embedding**: # Global embedding codes
-- **features**: # Local embedding codes
+- **embedding**: # Global and local embedding codes
+- **features**: # Merge global and local embeddings
 - **classification_model**: # Classify the extracted structured node feature vectors
 - **result_images**: # Metrics and visualizations
 
