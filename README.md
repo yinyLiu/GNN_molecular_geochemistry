@@ -8,7 +8,7 @@ In photochemical experiments, the same molecule may exhibit different behaviors 
 - *Molecule 1*: Labeled as `Labile` in Sample A but `Product` in Sample B.
 - *Molecule 2*: Labeled as `Resistant` in Sample C but `Product` in Sample D.
 
-Traditional single-network approaches fail to capture these contextual differences, resulting in poor generalization.
+Traditional table data approaches fail to capture these contextual differences, resulting in poor generalization.
 
 ## Solution: Dual-Network Graph Learning
 We propose a **global-local graph neural network (GNN)** framework to resolve label conflicts by combining unsupervised global patterns and sample-specific local features.
